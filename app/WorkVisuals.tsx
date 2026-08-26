@@ -23,15 +23,16 @@ export default function WorkVisuals() {
     </article>
 
     <article className="walkthrough shell investigationStory opportunityStory">
-      <header className="walkHeader"><div><span className="projectType">02 · Opportunity analysis</span><h3>Found where the business should focus first</h3><p className="walkSubhead">From a broad dataset to a quantified, actionable opportunity.</p></div><div className="question"><span>Business question</span><strong>Where is the biggest opportunity?</strong></div></header>
-      <div className="opportunityCanvas">
-        <section className="opData"><StepLabel index={1}>Large dataset</StepLabel><strong>12M+</strong><span>transactions</span><div className="dataFields"><i>Customer</i><i>Product</i><i>Region</i><i>Channel</i><i>Expected</i><i>Actual</i></div></section>
-        <section className="opGap"><StepLabel index={2}>Quantify</StepLabel><div><span>Expected<strong>$42.0M</strong></span><span>Actual<strong>$39.6M</strong></span></div><p><small>Opportunity gap</small><strong>$2.4M</strong></p></section>
-        <section className="opCompare"><StepLabel index={3}>Compare</StepLabel><h4>By product</h4><div className="opBars">{[['A','.4M',33],['B','1.2M',100],['C','.3M',25],['D','.5M',42]].map(([l,v,w])=><div className={l==='B'?'signal':''} key={l}><span>{l}</span><i style={{'--bar':`${w}%`} as React.CSSProperties}/><b>${v}</b></div>)}</div><h4>By segment</h4><div className="segmentValues"><span>Enterprise <b>$1.1M</b></span><span>Mid-market <b>$0.8M</b></span><span>SMB <b>$0.5M</b></span></div></section>
-        <section className="opDrill"><StepLabel index={4}>Drill deeper</StepLabel><div className="drillPath"><span>Product B</span><b>↓</b><span>Enterprise</span><b>↓</b><span>East region</span></div><div className="variance"><span>Expected<b>$125</b></span><span>Actual<b>$109</b></span><strong>−$16 variance</strong></div></section>
-        <aside className="opPriority"><span>Concentrated opportunity</span><strong>$1.1M</strong><small>Synthetic estimate</small><div><b>Priority</b>Investigate the Product B pricing discrepancy within Enterprise / East first.<em>Highest potential impact</em></div></aside>
+      <header className="walkHeader"><div><span className="projectType">02 · Opportunity analysis</span><h3>Found where the business should focus next</h3><p className="walkSubhead">From sales data to a more complete picture of where growth could actually create value.</p></div><div className="question"><span>Business question</span><strong>Which product should we invest in?</strong></div></header>
+      <div className="discoveryScale"><span><b>$4.8M</b> revenue</span><span><b>18</b> products</span><span><b>3</b> channels</span><span><b>2,400</b> customers</span></div>
+      <div className="discoveryStory">
+        <section className="revenueAnswer"><StepLabel index={1}>Revenue</StepLabel><div className="revenueBars">{[['A','$1.2M',100],['B','$850K',71],['C','$620K',52],['D','$470K',39]].map(([l,v,w])=><div className={l==='A'?'winner':''} key={l}><span>Product {l}</span><i style={{'--bar':`${w}%`} as React.CSSProperties}/><b>{v}</b></div>)}</div><p>Revenue says: <strong>invest in Product A.</strong></p></section>
+        <section className="contextBridge"><StepLabel index={2}>Add context</StepLabel><div><span>Sales</span><b>+</b><span>Costs</span><b>+</b><span>Customer behavior</span><b>+</b><span>Sales channel</span></div><p>The biggest number is not always the biggest opportunity.</p></section>
+        <section className="productCompare"><StepLabel index={3}>Compare</StepLabel><div className="productColumns"><article><span>Product A</span><strong>$1.2M</strong><small>Revenue</small><b>8% margin</b><b>12% repeat</b></article><article className="betterProduct"><span>Product B</span><strong>$850K</strong><small>Revenue</small><b>31% margin</b><b>46% repeat</b></article></div></section>
+        <section className="channelDiscovery"><StepLabel index={4}>Discover</StepLabel><strong>Product B</strong><div><span className="best"><b>Direct</b><i>Strongest margin</i><em>High repeat</em></span><span><b>Marketplace</b><i>Moderate margin</i><em>Moderate repeat</em></span><span><b>Wholesale</b><i>Lower margin</i><em>Lower repeat</em></span></div></section>
+        <aside className="discoveryConclusion"><span>Opportunity found</span><strong>Product B<br />· Direct channel</strong><p>Strong margin + strong repeat behavior + room to grow</p><div><b>Recommended next step</b>Prioritize Product B&apos;s direct channel before increasing investment in the highest-revenue product.</div></aside>
       </div>
-      <p className="syntheticNote">Illustrative opportunity analysis using synthetic data.</p>
+      <p className="syntheticNote">Illustrative analysis using synthetic data.</p>
     </article>
 
     <article className="walkthrough shell biStory">
