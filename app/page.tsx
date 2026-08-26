@@ -23,7 +23,7 @@ export default function Home() {
   const consultation = 'mailto:tanvikinkhabwala@gmail.com?subject=Free%20analytics%20consultation&body=Hi%20Tanvi%2C%0A%0AI%20liked%20your%20work%20and%20would%20love%20to%20discuss%3A%0A';
   return <main>
     <nav className="nav shell" aria-label="Main navigation">
-      <a className="brand" href="#top"><span>TK</span> Tanvi Kinkhabwala</a>
+      <a className="brand" href="#top"><span className="logoMark" aria-hidden="true" /> Tanvi Kinkhabwala</a>
       <div className="navlinks"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="#about">About</a></div>
     </nav>
 
@@ -57,6 +57,6 @@ export default function Home() {
 
     <section className="offer"><div className="shell offerInner"><p className="kicker">One more thing</p><h2>Like what I’ve<br />done so far?</h2><p className="offerLead">I also help growing teams solve focused analytics problems—without the overhead of a large consulting engagement.</p><div className="offerList"><span>Dashboards &amp; KPI design</span><span>Reporting automation</span><span>Data cleanup &amp; modeling</span><span>Analytics advisory</span></div><p className="offerNote">Not sure what you need? That’s exactly what the first conversation is for.</p><a className="button light" href={consultation}>Book a free 30-minute consultation <span>↗</span></a></div></section>
 
-    <footer className="footer shell"><div className="brand"><span>TK</span> Tanvi Kinkhabwala</div><p>Senior data analytics professional · New York</p><div><a href="mailto:tanvikinkhabwala@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvi-kinkhabwala" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
+    <footer className="footer shell"><div className="brand"><span className="logoMark" aria-hidden="true" /> Tanvi Kinkhabwala</div><p>Senior data analytics professional · New York</p><div><a href="mailto:tanvikinkhabwala@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvi-kinkhabwala" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
   </main>;
 }

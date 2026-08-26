@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Tanvi Kinkhabwala | Senior Data Analytics Professional',
   description: 'Portfolio of Tanvi Kinkhabwala: analytics, automation, BI, and data engineering work that drives measurable business impact.',
+  icons: { icon: '/tk-logo.png', apple: '/tk-logo.png' },
   openGraph: {
     title: 'Tanvi Kinkhabwala | Data Analytics Portfolio',
     description: 'I turn complex data into clear decisions through analytics, automation, and business intelligence.',
