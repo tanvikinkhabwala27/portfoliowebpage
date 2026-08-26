@@ -10,7 +10,7 @@ export default function WorkVisuals() {
     <div className="shell visualIntro">
       <p className="kicker">How I turn data into decisions</p>
       <div className="workFramework" aria-label="Automate, investigate, communicate"><strong>Automate</strong><span>→</span><strong>Investigate</strong><span>→</span><strong>Communicate</strong></div>
-      <h2 id="visual-work-title">Three ways I make complex data useful.</h2>
+      <h2 id="visual-work-title">Three ways I make<br />complex data useful.</h2>
       <p>Eliminate repetitive work, find the real drivers, and translate complexity into clear decision support.</p>
     </div>
 
