@@ -2,7 +2,7 @@ import WorkVisuals from './WorkVisuals';
 
 const impact = [
   { stat:'80 → 2', unit:'hours', title:'Automated a critical validation process', copy:'Built a Python and Alteryx workflow that cut manual effort by roughly 98% while strengthening audit readiness.' },
-  { stat:'ROOT CAUSE', unit:'illustrative investigation', title:'Found what was really driving the problem', copy:'Used exploratory and drill-down analysis to move from a broad performance question to a focused, actionable insight.' },
+  { stat:'OPPORTUNITY', unit:'illustrative analysis · synthetic data', title:'Found where the business should focus first', copy:'Used large-scale analysis, segmentation, and opportunity sizing to turn complex data into a focused business recommendation.' },
   { stat:'8M+', unit:'records', title:'Made operational data decision-ready', copy:'Delivered reporting and KPI frameworks that helped hospital leaders accelerate decisions by up to 85%.' },
 ];
 const experience = [
