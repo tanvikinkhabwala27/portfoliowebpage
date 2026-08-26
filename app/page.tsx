@@ -27,10 +27,14 @@ export default function Home() {
 
     <section className="hero shell" id="top">
       <div className="eyebrow"><span /> Senior data analytics professional · New York</div>
-      <h1>I turn complex data<br />into <em>clear decisions.</em></h1>
-      <p className="lede">I’m Tanvi, an analytics leader with 7+ years of experience building enterprise BI, automation, and data solutions that create measurable business impact.</p>
-      <div className="actions"><a className="button" href="#work">View selected work <span>↓</span></a><a className="textlink" href="https://www.linkedin.com/in/tanvi-kinkhabwala" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
-      <p className="micro">SQL · Python · Snowflake · Power BI · Tableau · Alteryx</p>
+      <div className="heroGrid">
+        <h1>I turn complex<br />data into <em>clear<br />decisions.</em></h1>
+        <div className="heroContent">
+          <p className="lede">I’m Tanvi, an analytics leader with 7+ years of experience building enterprise BI, automation, and data solutions that create measurable business impact.</p>
+          <div className="actions"><a className="button" href="#work">View selected work <span>↓</span></a><a className="textlink" href="https://www.linkedin.com/in/tanvi-kinkhabwala" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          <p className="micro">SQL · Python · Snowflake · Power BI · Tableau · Alteryx</p>
+        </div>
+      </div>
     </section>
 
     <section className="proof shell" aria-label="Career highlights">
