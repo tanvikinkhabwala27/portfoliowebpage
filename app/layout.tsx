@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Tanvi Kinkhabwala | Data & Analytics Consultant',
-  description: 'Practical dashboards, data automation, and analytics strategy for growing teams. Start with a free consultation.',
+  title: 'Tanvi Kinkhabwala | Senior Data Analytics Professional',
+  description: 'Portfolio of Tanvi Kinkhabwala: analytics, automation, BI, and data engineering work that drives measurable business impact.',
   openGraph: {
-    title: 'Tanvi Kinkhabwala | Data & Analytics Consultant',
-    description: 'Data that answers what’s next. Analytics, automation, and BI for growing teams.',
+    title: 'Tanvi Kinkhabwala | Data Analytics Portfolio',
+    description: 'I turn complex data into clear decisions through analytics, automation, and business intelligence.',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Tanvi Kinkhabwala - Data that answers what’s next.' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tanvi Kinkhabwala | Data & Analytics Consultant',
-    description: 'Data that answers what’s next. Analytics, automation, and BI for growing teams.',
+    title: 'Tanvi Kinkhabwala | Data Analytics Portfolio',
+    description: 'I turn complex data into clear decisions through analytics, automation, and business intelligence.',
     images: ['/og.png'],
   },
 };
