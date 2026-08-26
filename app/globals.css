@@ -56,4 +56,5 @@ h1,h2 { font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spaci
 @media(max-width:1100px){.discoveryStory{grid-template-columns:1fr 1fr}.discoveryConclusion{grid-column:1/-1;min-height:230px}.questionGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.businessQuestions{padding:82px 0}.businessQuestionsHead{grid-template-columns:1fr;gap:24px;margin-bottom:40px}.businessQuestionsHead .kicker{grid-column:auto;margin-bottom:0}.questionGrid{grid-template-columns:1fr}.questionGrid article{min-height:280px}.discoveryStory{grid-template-columns:1fr}.discoveryStory>section,.discoveryConclusion{min-height:0}.discoveryConclusion{grid-column:auto}.discoveryConclusion>div{margin-top:24px}.offer h2 br{display:none}}
 @media(prefers-reduced-motion:reduce){.questionGrid article{transition:none}.questionGrid article:hover{transform:none}}
-.impact .cardNote{margin-top:12px;color:var(--accent);font-size:8px;letter-spacing:.12em;opacity:.8}
+.impact .cardNote{display:block;margin-top:9px;color:var(--accent);font-size:8px;letter-spacing:.12em;opacity:.8}.impact h3{min-height:112px;display:flex;align-items:flex-end}.impact>p{min-height:92px;margin-bottom:0}
+@media(max-width:760px){.impact h3,.impact>p{min-height:0}.impact h3{display:block}}
