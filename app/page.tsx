@@ -1,3 +1,5 @@
+import WorkVisuals from './WorkVisuals';
+
 const impact = [
   { stat:'80 → 2', unit:'hours', title:'Automated a critical validation process', copy:'Built a Python and Alteryx workflow that cut manual effort by roughly 98% while strengthening audit readiness.' },
   { stat:'$200K', unit:'annual savings', title:'Modeled a smarter operational route', copy:'Designed a predictive transportation model that identified significant recurring savings for a healthcare organization.' },
@@ -46,6 +48,8 @@ export default function Home() {
     <section className="about" id="about"><div className="shell aboutGrid"><div className="monogram" aria-hidden="true">TK<span>data → decisions</span></div><div><p className="kicker">A little about me</p><h2>Business-minded.<br />Technically fluent.</h2><p className="aboutCopy">I work at the intersection of data, technology, and business strategy. My job is not simply to build a dashboard—it’s to understand the decision behind it and make the path forward visible.</p><p className="aboutCopy">I’ve partnered with executives, finance leaders, operators, and technical teams to turn complex data into trusted systems, sharper questions, and measurable results.</p><div className="education"><span>MS, Information Systems</span><strong>Stevens Institute of Technology · GPA 3.7</strong></div></div></div></section>
 
     <section className="work" id="work"><div className="shell"><div className="sectionHead"><p className="kicker">Selected work</p><h2>Impact, in numbers.</h2><p>A few examples of how I’ve used analytics, automation, and business context to create meaningful outcomes.</p></div><div className="impactGrid">{impact.map((x,i)=><article className="impact" key={x.stat}><span className="case">Project 0{i+1}</span><div><strong>{x.stat}</strong><small>{x.unit}</small></div><h3>{x.title}</h3><p>{x.copy}</p></article>)}</div></div></section>
+
+    <WorkVisuals />
 
     <section className="experience shell" id="experience"><div className="experienceHead"><p className="kicker">Experience</p><h2>Built across industries.</h2><p>From global consulting to healthcare operations, each role has strengthened how I connect technical execution with business outcomes.</p></div><div className="timeline">{experience.map((x,i)=><article className="role" key={x.company}><div><span className="roleIndex">0{i+1}</span><span className="years">{x.years}</span></div><div><h3>{x.role}</h3><strong>{x.company}</strong><p>{x.copy}</p></div></article>)}</div></section>
 
