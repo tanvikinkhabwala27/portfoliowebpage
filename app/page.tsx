@@ -3,7 +3,7 @@ import WorkVisuals from './WorkVisuals';
 const impact = [
   { stat:'80 → 2', unit:'hours', title:'Automated a critical validation process', copy:'Built a Python and Alteryx workflow that cut manual effort by roughly 98% while strengthening audit readiness.' },
   { stat:'8% → 31%', unit:'margin', title:'Found where the business should focus next', copy:'Revenue pointed to one product. Adding profitability, customer behavior, and channel performance revealed a stronger growth opportunity.', note:'Illustrative · synthetic data' },
-  { stat:'8M+', unit:'records', title:'Made operational data decision-ready', copy:'Delivered reporting and KPI frameworks that helped hospital leaders accelerate decisions by up to 85%.' },
+  { stat:'8M+', unit:'records', title:'Made complex data decision-ready', copy:'Delivered reporting and KPI frameworks that helped hospital leaders accelerate decisions by up to 85%.' },
 ];
 const experience = [
   { years:'2022 — Present', role:'Senior Analytics Consultant', company:'Protiviti · New York', copy:'Leading enterprise analytics engagements, executive KPI strategy, SQL data modeling, BI delivery, and high-impact automation across millions of records.' },

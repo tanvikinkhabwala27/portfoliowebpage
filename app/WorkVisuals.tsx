@@ -47,6 +47,5 @@ export default function WorkVisuals() {
       </div>
       <p className="syntheticNote">Dashboard values are illustrative and use synthetic data.</p>
     </article>
-    <div className="labTeaser shell" id="analytics-lab"><div><p className="kicker">Analytics Lab</p><h2>Interested in seeing more?</h2><p>Explore the Analytics Lab to interact with dashboards and see more examples of my work in action.</p></div><a className="button" href="/analytics-lab">Explore Analytics Lab <span>→</span></a></div>
   </section>;
 }
