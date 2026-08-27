@@ -24,7 +24,7 @@ export default function Home() {
   return <main>
     <nav className="nav shell" aria-label="Main navigation">
       <a className="brand" href="#top"><span className="logoMark" aria-hidden="true" /> Tanvi Kinkhabwala</a>
-      <div className="navlinks"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="#about">About</a></div>
+      <div className="navlinks"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="#about">About</a><a href="/analytics-lab">Analytics Lab</a></div>
     </nav>
 
     <section className="hero shell" id="top">
