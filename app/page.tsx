@@ -2,7 +2,7 @@ import WorkVisuals from './WorkVisuals';
 
 const impact = [
   { stat:'80 → 2', unit:'hours', title:'Automated a critical validation process', copy:'Built a Python and Alteryx workflow that cut manual effort by roughly 98% while strengthening audit readiness.' },
-  { stat:'8% → 31%', unit:'margin', title:'Found where the business should focus next', copy:'Revenue pointed to one product. Adding profitability, customer behavior, and channel performance revealed a stronger growth opportunity.', note:'Illustrative · synthetic data' },
+  { stat:'8% → 31%', unit:'margin', title:'Found where the business should focus next', copy:'Revenue pointed to one product. Adding profitability, customer behavior, and channel performance revealed a stronger growth opportunity.' },
   { stat:'8M+', unit:'records', title:'Made complex data decision-ready', copy:'Delivered reporting and KPI frameworks that helped hospital leaders accelerate decisions by up to 85%.' },
 ];
 const experience = [
@@ -47,7 +47,7 @@ export default function Home() {
 
     <section className="about" id="about"><div className="shell aboutGrid"><div className="monogram" aria-hidden="true">TK<span>data → decisions</span></div><div><p className="kicker">A little about me</p><h2>Business-minded.<br />Technically fluent.</h2><p className="aboutCopy">I work at the intersection of data, technology, and business strategy. My job is not simply to build a dashboard—it’s to understand the decision behind it and make the path forward visible.</p><p className="aboutCopy">I’ve partnered with executives, finance leaders, operators, and technical teams to turn complex data into trusted systems, sharper questions, and measurable results.</p><div className="education"><span>MS, Information Systems</span><strong>Stevens Institute of Technology · GPA 3.7</strong></div></div></div></section>
 
-    <section className="work" id="work"><div className="shell"><div className="sectionHead"><p className="kicker">Selected work</p><h2>Impact, in numbers.</h2><p>A few examples of how I’ve used analytics, automation, and business context to create meaningful outcomes.</p></div><div className="impactGrid">{impact.map((x,i)=><article className="impact" key={x.stat}><span className="case">Project 0{i+1}</span><div className="impactMetric"><strong>{x.stat}</strong><small>{x.unit}</small></div><h3>{x.title}</h3><p>{x.copy}</p><small className={`cardNote${x.note?'':' emptyNote'}`}>{x.note||'Professional result'}</small></article>)}</div></div></section>
+    <section className="work" id="work"><div className="shell"><div className="sectionHead"><p className="kicker">Selected work</p><h2>Impact, in numbers.</h2><p>A few examples of how I’ve used analytics, automation, and business context to create meaningful outcomes.</p></div><div className="impactGrid">{impact.map((x,i)=><article className="impact" key={x.stat}><span className="case">Project 0{i+1}</span><div className="impactMetric"><strong>{x.stat}</strong><small>{x.unit}</small></div><h3>{x.title}</h3><p>{x.copy}</p></article>)}</div></div></section>
 
     <WorkVisuals />
 
