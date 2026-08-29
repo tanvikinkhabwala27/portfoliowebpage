@@ -2,6 +2,9 @@ function StepLabel({ index, children }: { index: number; children: React.ReactNo
   return <div className="stepLabel"><span>{String(index).padStart(2, '0')}</span><strong>{children}</strong></div>;
 }
 function Arrow() { return <span className="processArrow" aria-hidden="true">→</span>; }
+function StoryArc({ items }: { items: string[] }) {
+  return <div className="storyArc" aria-label={items.join(' to ')}>{items.map((item, index) => <div key={item}><span>0{index + 1}</span><strong>{item}</strong>{index < items.length - 1 && <b aria-hidden="true">→</b>}</div>)}</div>;
+}
 export default function WorkVisuals() {
   return <section className="visualWork" aria-labelledby="visual-work-title">
     <div className="shell visualIntro">
@@ -13,6 +16,7 @@ export default function WorkVisuals() {
 
     <article className="walkthrough shell automationStory">
       <header className="walkHeader"><div><span className="projectType">01 · Process automation</span><h3>Automated a critical validation process</h3></div><div className="question lightQuestion"><span>Business question</span><strong>Why are we spending so much time doing this manually?</strong></div></header>
+      <StoryArc items={['Problem', 'Workflow', 'Result']} />
       <div className="beforeAfterFlow" aria-label="Before, automation, and after workflow">
         <section className="statePanel beforePanel"><StepLabel index={1}>Before</StepLabel><div className="sourceStack"><span>CSV</span><span>XLS</span><span>DB</span><span>SYS</span></div><div className="manualSteps"><span>Manual data preparation</span><span>Manual reconciliation</span><span>Manual validation</span><span>Manual output preparation</span></div><div className="effortMetric"><strong>~80</strong><small>hours every cycle</small></div></section>
         <Arrow />
@@ -24,6 +28,8 @@ export default function WorkVisuals() {
 
     <article className="walkthrough shell investigationStory opportunityStory">
       <header className="walkHeader"><div><span className="projectType">02 · Opportunity analysis</span><h3>Found where the business should focus next</h3><p className="walkSubhead">From sales data to a more complete picture of where growth could actually create value.</p></div><div className="question"><span>Business question</span><strong>Which product should we invest in?</strong></div></header>
+      <StoryArc items={['Obvious answer', 'Add context', 'Better answer']} />
+      <blockquote className="projectThesis">The biggest number is not always the biggest opportunity.</blockquote>
       <div className="discoveryScale"><span><b>$4.8M</b> revenue</span><span><b>18</b> products</span><span><b>3</b> channels</span><span><b>2,400</b> customers</span></div>
       <div className="discoveryStory">
         <section className="revenueAnswer"><StepLabel index={1}>Revenue</StepLabel><div className="revenueBars">{[['A','$1.2M',100],['B','$850K',71],['C','$620K',52],['D','$470K',39]].map(([l,v,w])=><div className={l==='A'?'winner':''} key={l}><span>Product {l}</span><i style={{'--bar':`${w}%`} as React.CSSProperties}/><b>{v}</b></div>)}</div><p>Revenue says: <strong>invest in Product A.</strong></p></section>
@@ -37,8 +43,9 @@ export default function WorkVisuals() {
 
     <article className="walkthrough shell biStory">
       <header className="walkHeader"><div><span className="projectType">03 · Decision intelligence</span><h3>Made complex data decision-ready</h3></div><div className="question lightQuestion"><span>Business question</span><strong>What does leadership actually need to know?</strong></div></header>
-      <div className="complexityLead"><strong>8M+</strong><span>records</span><p>An executive does not need 8 million rows.</p><div>Transactions · dates · categories · locations · statuses · amounts · multiple sources</div></div>
-      <div className="clarityFrame"><strong>Complexity</strong><span>→</span><strong>Clarity</strong><span>→</span><strong>Decision</strong></div>
+      <StoryArc items={['Complexity', 'Structure', 'Decision']} />
+      <div className="decisionProgression" aria-label="8 million records become 12 trusted KPIs, 4 attention areas, and 1 executive view"><div><strong>8M+</strong><span>Records</span></div><b>→</b><div><strong>12</strong><span>Trusted KPIs</span></div><b>→</b><div><strong>4</strong><span>Attention areas</span></div><b>→</b><div><strong>1</strong><span>Executive view</span></div></div>
+      <p className="complexityNote">An executive does not need 8 million rows. They need a trusted view of where to focus.</p>
       <div className="beforeAfterStrip"><span><b>Before</b> Fragmented sources · inconsistent definitions · difficult comparison</span><span><b>After</b> One model · trusted KPIs · one executive view</span></div>
       <div className="biFlow">
         <div className="biPrep"><div className="biStage"><StepLabel index={1}>Data sources</StepLabel><div className="dbSources"><span>OPS</span><span>FIN</span><span>CRM</span></div><small>Multiple operational sources</small></div><Arrow /><div className="biStage"><StepLabel index={2}>SQL + data model</StepLabel><div className="modelVisual"><span>FACT</span><i/><span>KPI</span><i/><span>DIM</span></div><small>Clean · joined · structured</small></div><Arrow /><div className="biStage"><StepLabel index={3}>KPI layer</StepLabel><div className="kpiList"><span>Volume</span><span>Rate</span><span>Trend</span><span>Opportunity</span></div><small>One trusted definition</small></div></div>
