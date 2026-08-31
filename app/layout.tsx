@@ -1,20 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+const productionUrl = 'https://tanvikinkhabwala.com';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(productionUrl),
   title: 'Tanvi Kinkhabwala | Senior Data Analytics Professional',
   description: 'Portfolio of Tanvi Kinkhabwala: analytics, automation, BI, and data engineering work that drives measurable business impact.',
+  alternates: { canonical: '/' },
   icons: { icon: '/tk-logo.png', apple: '/tk-logo.png' },
   openGraph: {
     title: 'Tanvi Kinkhabwala | Data Analytics Portfolio',
@@ -36,9 +29,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Tanvi Kinkhabwala',
+              url: productionUrl,
+              jobTitle: 'Senior Data Analytics Professional',
+              sameAs: ['https://www.linkedin.com/in/tanvi-kinkhabwala'],
+            }),
+          }}
+        />
         {children}
       </body>
     </html>

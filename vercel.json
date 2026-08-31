@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.tanvikinkhabwala.com" }],
+      "destination": "https://tanvikinkhabwala.com/$1",
+      "permanent": true
+    }
+  ]
+}

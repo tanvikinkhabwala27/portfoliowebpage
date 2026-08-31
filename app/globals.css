@@ -1,4 +1,3 @@
-@import 'tailwindcss';
 :root { --ink:#172621; --paper:#f4f1e8; --accent:#e4633b; }
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; } a { color:inherit; text-decoration:none; }
 .shell { width:min(1180px,calc(100% - 48px)); margin-inline:auto; }
