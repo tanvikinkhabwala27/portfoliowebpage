@@ -78,3 +78,5 @@ At the authoritative DNS provider, use the exact values Vercel displays for the 
 | `www` | `CNAME` | `cname.vercel-dns-0.com` |
 
 Remove the old Sites A/AAAA/CNAME records only after the Vercel deployment is verified and Vercel has accepted both domains. Preserve unrelated records such as MX, TXT, and email-verification records.
+
+Deployed with Vercel.
